@@ -1,9 +1,9 @@
-import model.Document;
-import model.Type;
+import tk.jingood2.java.model.Document;
+import tk.jingood2.java.model.Type;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import service.SearchEngine;
+import tk.jingood2.java.service.SearchEngine;
 
 import java.util.List;
 

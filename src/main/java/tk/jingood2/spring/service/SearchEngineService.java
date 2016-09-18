@@ -1,8 +1,9 @@
-package service;
+package tk.jingood2.spring.service;
 
-import data.DocumentDAO;
-import model.Document;
-import model.Type;
+import tk.jingood2.spring.data.DocumentDAO;
+import tk.jingood2.java.model.Document;
+import tk.jingood2.java.model.Type;
+import tk.jingood2.java.service.SearchEngine;
 
 import java.util.ArrayList;
 import java.util.Arrays;

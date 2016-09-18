@@ -3,21 +3,21 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="engine" class="service.SearchEngineService">
+    <bean id="engine" class="tk.jingood2.spring.service.SearchEngineService">
         <property name="documentDAO" ref="documentDAO"/>
     </bean>
 
-    <bean id="documentDAO" class="data.DocumentRepository">
+    <bean id="documentDAO" class="tk.jingood2.spring.data.DocumentRepository">
         <property name="doc1" ref="doc1" />
     </bean>
 
-    <bean id="doc1" class="model.Document">
+    <bean id="doc1" class="tk.jingood2.java.model.Document">
         <property name="name" value="Pro Spring Security Book" />
         <property name="type" ref="webType" />
         <property name="location" value="http://www.apress.com/9781430248187"/>
     </bean>
 
-    <bean id="webType" class="model.Type">
+    <bean id="webType" class="tk.jingood2.java.model.Type">
         <property name="name" value="WEB" />
         <property name="desc" value="Web Link" />
         <property name="extension" value=".url" />
@@ -25,7 +25,7 @@
 
 
 
-    <bean id="documentType" class="model.Type">
+    <bean id="documentType" class="tk.jingood2.java.model.Type">
         <property name="name" value="WEB" />
         <property name="desc" value="Web Link" />
         <property name="extension" value=".url" />

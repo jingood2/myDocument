@@ -1,6 +1,6 @@
-package data;
+package tk.jingood2.spring.data;
 
-import model.Document;
+import tk.jingood2.java.model.Document;
 
 /**
  * Created by KimJin-young on 2016. 9. 18..

@@ -1,9 +1,9 @@
-import model.Document;
-import model.Type;
+import tk.jingood2.java.model.Document;
+import tk.jingood2.java.model.Type;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import service.MySearchEngine;
-import service.SearchEngine;
+import tk.jingood2.java.service.MySearchEngine;
+import tk.jingood2.java.service.SearchEngine;
 
 import java.util.List;
 

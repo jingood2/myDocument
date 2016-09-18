@@ -1,7 +1,7 @@
-package service;
+package tk.jingood2.java.service;
 
-import model.Document;
-import model.Type;
+import tk.jingood2.java.model.Document;
+import tk.jingood2.java.model.Type;
 
 import java.util.List;
 

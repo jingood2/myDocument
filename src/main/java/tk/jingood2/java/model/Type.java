@@ -1,4 +1,4 @@
-package model;
+package tk.jingood2.java.model;
 
 /**
  * Created by KimJin-young on 2016. 9. 18..
