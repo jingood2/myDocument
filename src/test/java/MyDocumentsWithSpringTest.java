@@ -23,13 +23,26 @@ public class MyDocumentsWithSpringTest {
 
     @Before
     public void setup() {
-
         context = new ClassPathXmlApplicationContext("META-INF/mydocument-context.xml");
-        engine = context.getBean(SearchEngine.class);
-        webType = context.getBean("webType", Type.class);
-
     }
 
+    @Test
+    public void testAll() {
+        engine = context.getBean(SearchEngine.class);
+        webType = context.getBean("webType",Type.class);
+
+        List<Document>  documents = engine.findByType(webType);
+        assertNotNull(documents);
+        assertTrue(documents.size()==1);
+
+        engine = context.getBean(SearchEngine.class);
+
+        documents = engine.listAll();
+        assertNotNull(documents);
+        assertTrue(documents.size()==1);
+    }
+
+    /*
     @Test
     public void testWithSpringFindByType() {
 
@@ -47,4 +60,6 @@ public class MyDocumentsWithSpringTest {
         assertTrue(documents.size() == 1);
 
     }
+    */
 }
+

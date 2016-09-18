@@ -9,18 +9,35 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 /**
  * Created by KimJin-young on 2016. 9. 18..
  */
 public class SearchEngineService implements SearchEngine {
 
+    private static final Logger log =
+            LoggerFactory.getLogger(SearchEngineService.class);
+
     private DocumentDAO documentDAO;
+
+    public SearchEngineService() {
+        if(log.isDebugEnabled())
+            log.debug("SearchEngineService created: " + this);
+
+        log.error("SearchEngineService");
+    }
 
     public DocumentDAO getDocumentDAO() {
         return documentDAO;
     }
 
     public void setDocumentDAO(DocumentDAO documentDAO) {
+        //if(log.isDebugEnabled())
+            log.info("Document DAO Set: " + documentDAO);
+
         this.documentDAO = documentDAO;
     }
 

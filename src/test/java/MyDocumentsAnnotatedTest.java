@@ -24,10 +24,12 @@ public class MyDocumentsAnnotatedTest {
     @Before
     public void setup() {
         context = new ClassPathXmlApplicationContext("META-INF/mydocument-annotations-context.xml");
-        engine = context.getBean(SearchEngine.class);
-        webType = context.getBean(Type.class);
+
     }
 
+
+
+    /*
     @Test
     public void testWithAnnotationsFindByType() {
         List<Document>  documents = engine.findByType(webType);
@@ -42,4 +44,5 @@ public class MyDocumentsAnnotatedTest {
         assertTrue(documents.size()==1);
 
     }
+    */
 }
