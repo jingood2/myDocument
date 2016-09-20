@@ -24,7 +24,7 @@ public class MyDocumentsContext {
 
     private DocumentDAO documentDAO() {
         DocumentRepository documentDAO = new DocumentRepository();
-        documentDAO.setDoc1(getDocumentFromMap("doc1"));
+        //documentDAO.setDoc1(getDocumentFromMap("doc1"));
 
         return documentDAO;
     }

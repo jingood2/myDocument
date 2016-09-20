@@ -25,7 +25,13 @@ public class MySearchEngine implements SearchEngine {
 
     @Override
     public List<Document> listAll() {
+
         return storage();
+    }
+
+    @Override
+    public List<Document> findByLocation(String location) {
+        throw new UnsupportedOperationException("findByLocation not yet implemented.");
     }
 
     private List<Document> storage() {

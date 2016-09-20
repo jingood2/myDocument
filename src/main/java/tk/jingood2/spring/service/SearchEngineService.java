@@ -27,7 +27,7 @@ public class SearchEngineService implements SearchEngine {
         if(log.isDebugEnabled())
             log.debug("SearchEngineService created: " + this);
 
-        log.error("SearchEngineService");
+        log.info("SearchEngineService created: " + this);
     }
 
     public DocumentDAO getDocumentDAO() {
@@ -35,8 +35,8 @@ public class SearchEngineService implements SearchEngine {
     }
 
     public void setDocumentDAO(DocumentDAO documentDAO) {
-        //if(log.isDebugEnabled())
-            log.info("Document DAO Set: " + documentDAO);
+        if(log.isDebugEnabled())
+            log.debug("Document DAO Set: " + documentDAO);
 
         this.documentDAO = documentDAO;
     }
@@ -56,4 +56,10 @@ public class SearchEngineService implements SearchEngine {
     public List<Document> listAll() {
         return Arrays.asList(documentDAO.getAll());
     }
+
+    @Override
+    public List<Document> findByLocation(String location) {
+        throw new UnsupportedOperationException("findByLocation not yet implemented.");
+    }
+
 }

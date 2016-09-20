@@ -8,7 +8,19 @@
     </bean>
 
     <bean id="documentDAO" class="tk.jingood2.spring.data.DocumentRepository">
-        <property name="doc1" ref="doc1" />
+        <property name="documents">
+            <list>
+                <ref bean="doc1" />
+            </list>
+        </property>
+    </bean>
+
+    <bean id="typeDAO" class="tk.jingood2.spring.data.TypeDataRepository">
+        <property name="types">
+            <map>
+                <entry key="webType" value-ref="webType" />
+            </map>
+        </property>
     </bean>
 
     <bean id="doc1" class="tk.jingood2.java.model.Document">

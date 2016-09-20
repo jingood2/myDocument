@@ -1,0 +1,17 @@
+:compileJava
+:processResources
+:classes
+:compileTestJava
+:processTestResources UP-TO-DATE
+:testClasses
+:test
+
+MyDocumentsWithSpringTest > testAll STARTED
+
+MyDocumentsWithSpringTest > testAll PASSED
+
+BUILD SUCCESSFUL
+
+Total time: 5.024 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.14.1/userguide/gradle_daemon.html
