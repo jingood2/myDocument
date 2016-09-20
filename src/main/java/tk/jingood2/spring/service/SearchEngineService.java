@@ -18,16 +18,9 @@ import org.slf4j.LoggerFactory;
  */
 public class SearchEngineService implements SearchEngine {
 
-    private static final Logger log =
-            LoggerFactory.getLogger(SearchEngineService.class);
-
     private DocumentDAO documentDAO;
 
     public SearchEngineService() {
-        if(log.isDebugEnabled())
-            log.debug("SearchEngineService created: " + this);
-
-        log.info("SearchEngineService created: " + this);
     }
 
     public DocumentDAO getDocumentDAO() {
@@ -35,9 +28,6 @@ public class SearchEngineService implements SearchEngine {
     }
 
     public void setDocumentDAO(DocumentDAO documentDAO) {
-        if(log.isDebugEnabled())
-            log.debug("Document DAO Set: " + documentDAO);
-
         this.documentDAO = documentDAO;
     }
 
