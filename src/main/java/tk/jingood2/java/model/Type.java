@@ -5,6 +5,7 @@ package tk.jingood2.java.model;
  */
 public class Type {
 
+    private String typeId;
     private String name;
     private String desc;
     private String extension;
@@ -30,6 +31,25 @@ public class Type {
     }
 
     public void setExtension(String extension) {
+
         this.extension = extension;
+    }
+
+    public String getTypeId() {
+        return typeId;
+    }
+
+    public void setTypeId(String typeId) {
+        this.typeId = typeId;
+    }
+
+    @Override
+    public String toString() {
+        return "Type{" +
+                "typeId='" + typeId + '\'' +
+                ", name='" + name + '\'' +
+                ", desc='" + desc + '\'' +
+                ", extension='" + extension + '\'' +
+                '}';
     }
 }

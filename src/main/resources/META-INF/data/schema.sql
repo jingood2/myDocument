@@ -1,0 +1,7 @@
+CREATE TABLE types {
+  typeId  VARCHAR (36) NOT NULL,
+  NAME VARCHAR (45) NOT NULL,
+  description VARCHAR (255) DEFAULT NULL,
+  extension VARCHAR (10) DEFAULT NULL,
+  PRIMARY KEY (typeId)
+}
